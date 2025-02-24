@@ -14,4 +14,9 @@ public class Cilindro {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
+    public double cacularVolume() {
+        double volume = Math.PI * Math.pow(raio, 2) * altura;
+        return volume;
+    }
 }
