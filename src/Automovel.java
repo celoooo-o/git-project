@@ -71,4 +71,25 @@ public class Automovel {
         this.cilindrada = cilindrada;
 
     }
+    public String toString() {
+        return "Automóvel de matrícula " + matricula + " corresponde a um " + marca + " de cilindrada " + cilindrada;
+
+    }
+
+    public int calcularDiferencaCilindrada(Automovel outroAutomovel) {
+        return this.cilindrada - outroAutomovel.getCilindrada();
+
+    }
+
+    public boolean isCilindradaMaior(Automovel outroAutomovel) {
+        return this.cilindrada > outroAutomovel.getCilindrada();
+    }
+
+    public boolean isCilindradaMaior(int cilindrada) {
+        return this.cilindrada == cilindrada;
+    }
+
+    public static int getTotalAutomoveis() {
+        return totalAutomoveis;
+    }
 }
